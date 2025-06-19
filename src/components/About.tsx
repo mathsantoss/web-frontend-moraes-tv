@@ -6,8 +6,8 @@ const About = () => {
   const features = [
     {
       icon: Shield,
-      title: 'Garantia de Qualidade',
-      description: 'Todos os serviços possuem garantia de 90 dias para sua tranquilidade.'
+      title: 'Garantia de Diferenciada',
+      description: 'Garantia estendida de 12 meses para sua maior tranquilidade.'
     },
     {
       icon: Clock,
@@ -15,14 +15,14 @@ const About = () => {
       description: 'Diagnóstico em até 24h e reparo ágil para você não ficar sem sua TV.'
     },
     {
+      icon: Users,
+      title: 'Atendimento Delivery',
+      description: 'Retirada e entrega grátis: facilidade e comodidade na sua casa.'
+    },
+    {
       icon: Award,
       title: 'Experiência Comprovada',
       description: 'Mais de 15 anos no mercado com milhares de clientes satisfeitos.'
-    },
-    {
-      icon: Users,
-      title: 'Atendimento Personalizado',
-      description: 'Cada cliente é único e merece um atendimento diferenciado.'
     }
   ];
 

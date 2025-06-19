@@ -58,20 +58,20 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Telefone',
-      info: '(11) 99999-9999',
-      action: () => window.open('tel:+5511999999999')
+      info: '(19) 99977-8547',
+      action: () => window.open('tel:+5519999778547')
     },
     {
       icon: Mail,
       title: 'E-mail',
-      info: 'contato@moraestv.com.br',
-      action: () => window.open('mailto:contato@moraestv.com.br')
+      info: 'moraes@moraesconsertotv.com.br',
+      action: () => window.open('mailto:moraes@moraesconsertotv.com.br')
     },
     {
       icon: MapPin,
       title: 'Endereço',
-      info: 'Rua das Flores, 123 - São Paulo/SP',
-      action: () => window.open('https://maps.google.com/?q=Rua+das+Flores+123+São+Paulo+SP')
+      info: 'Conceicao, Campinas - State of São Paulo, 13010-061',
+      action: () => window.open('https://maps.app.goo.gl/cxDw8aq87ouUBLEK8')
     },
     {
       icon: Clock,

@@ -37,7 +37,7 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline"
-                onClick={() => window.open('https://wa.me/5511999999999', '_blank')}
+                onClick={() => window.open('https://wa.me/5519999778547', '_blank')}
                 className="border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white px-8 py-3 text-lg font-semibold transition-all duration-200"
               >
                 WhatsApp
@@ -65,7 +65,7 @@ const Hero = () => {
           <div className="lg:order-2 animate-fade-in">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop"
+                src="https://raw.githubusercontent.com/mathsantoss/cdn/refs/heads/main/images/repair_tv.png"
                 alt="Técnico trabalhando em TV"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
