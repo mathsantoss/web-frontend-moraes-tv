@@ -17,10 +17,11 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-                Especialistas em
+                Especialista em
                 <span className="text-primary block">Assistência Técnica</span>
-                de TV
+                de TV - <span className="text-primary">DELIVERY</span>
               </h1>
+
               <p className="text-xl text-muted-foreground leading-relaxed">
                 Mais de 15 anos de experiência no reparo de televisores. 
                 Atendimento rápido, diagnóstico preciso e garantia em todos os serviços.
