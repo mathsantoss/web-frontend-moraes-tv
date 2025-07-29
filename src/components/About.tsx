@@ -30,7 +30,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Sobre a MoraesTV
+            Sobre a Moraes Conserto TV
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Somos uma empresa especializada em assistência técnica de televisores, 
@@ -38,7 +38,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        {/* <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div className="animate-fade-in">
             <img
               src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop"
@@ -64,7 +64,7 @@ const About = () => {
               com rapidez e qualidade.
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
