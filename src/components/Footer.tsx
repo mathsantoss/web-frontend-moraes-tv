@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Wrench, Phone, Mail, MapPin } from 'lucide-react';
 
@@ -11,18 +10,18 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-secondary text-secondary-foreground py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="bg-blue-700 p-2 rounded-lg">
-                <Wrench className="h-6 w-6 text-white" />
+              <div className="bg-primary p-2 rounded-lg">
+                <Wrench className="h-6 w-6 text-primary-foreground" />
               </div>
               <span className="text-2xl font-bold">MoraesTV</span>
             </div>
-            <p className="text-gray-300">
+            <p className="text-muted-foreground">
               Especialistas em assistência técnica de televisores há mais de 15 anos. 
               Qualidade, confiança e garantia em todos os serviços.
             </p>
@@ -35,7 +34,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('inicio')}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   Início
                 </button>
@@ -43,7 +42,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('sobre')}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   Sobre Nós
                 </button>
@@ -51,7 +50,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('servicos')}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   Serviços
                 </button>
@@ -59,7 +58,7 @@ const Footer = () => {
               <li>
                 <button 
                   onClick={() => scrollToSection('avaliacoes')}
-                  className="text-gray-300 hover:text-white transition-colors duration-200"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   Avaliações
                 </button>
@@ -70,7 +69,7 @@ const Footer = () => {
           {/* Services */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Serviços</h3>
-            <ul className="space-y-2 text-gray-300">
+            <ul className="space-y-2 text-muted-foreground">
               <li>Reparo de Imagem</li>
               <li>Problemas de Áudio</li>
               <li>Assistência Smart TV</li>
@@ -85,30 +84,30 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Contato</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">(11) 99999-9999</span>
+                <Phone className="h-5 w-5 text-primary" />
+                <span className="text-muted-foreground">(11) 99999-9999</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">contato@moraestv.com.br</span>
+                <Mail className="h-5 w-5 text-primary" />
+                <span className="text-muted-foreground">contato@moraestv.com.br</span>
               </div>
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-blue-400 mt-1" />
-                <span className="text-gray-300">
-                  Conceicao, 13010-061<br />
-                  Campinas/SP
+                <MapPin className="h-5 w-5 text-primary mt-1" />
+                <span className="text-muted-foreground">
+                  Rua das Flores, 123<br />
+                  São Paulo/SP
                 </span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8">
+        <div className="border-t border-border mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-300 text-sm">
+            <div className="text-muted-foreground text-sm">
               © 2024 MoraesTV. Todos os direitos reservados.
             </div>
-            <div className="text-gray-300 text-sm mt-4 md:mt-0">
+            <div className="text-muted-foreground text-sm mt-4 md:mt-0">
               Horário de Funcionamento: Seg-Sex 8h-18h | Sáb 8h-14h
             </div>
           </div>

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -82,21 +81,21 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contato" className="py-20 bg-gray-50">
+    <section id="contato" className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-foreground mb-4">
             Entre em Contato
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Precisa de ajuda com sua TV? Entre em contato conosco e receba um orçamento gratuito!
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-xl animate-fade-in">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="bg-background rounded-2xl p-8 shadow-xl animate-fade-in">
+            <h3 className="text-2xl font-bold text-foreground mb-6">
               Solicite um Orçamento
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -147,7 +146,7 @@ const Contact = () => {
               <Button 
                 type="submit" 
                 disabled={isLoading}
-                className="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 text-lg font-semibold"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 text-lg font-semibold"
               >
                 {isLoading ? 'Enviando...' : 'Enviar Mensagem'}
               </Button>
@@ -157,24 +156,24 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8 animate-fade-in">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold text-foreground mb-6">
                 Informações de Contato
               </h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <div 
                     key={index} 
-                    className={`flex items-center space-x-4 p-4 bg-white rounded-xl shadow-md ${
-                      info.action ? 'cursor-pointer hover:bg-gray-50 transition-colors duration-200' : ''
+                    className={`flex items-center space-x-4 p-4 bg-background rounded-xl shadow-md ${
+                      info.action ? 'cursor-pointer hover:bg-accent transition-colors duration-200' : ''
                     }`}
                     onClick={info.action || undefined}
                   >
-                    <div className="bg-blue-100 p-3 rounded-full">
-                      <info.icon className="h-6 w-6 text-blue-700" />
+                    <div className="bg-primary/10 p-3 rounded-full">
+                      <info.icon className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">{info.title}</h4>
-                      <p className="text-gray-600">{info.info}</p>
+                      <h4 className="font-semibold text-foreground">{info.title}</h4>
+                      <p className="text-muted-foreground">{info.info}</p>
                     </div>
                   </div>
                 ))}
@@ -182,10 +181,10 @@ const Contact = () => {
             </div>
 
             {/* Map placeholder */}
-            <div className="bg-white rounded-xl p-6 shadow-md">
-              <h4 className="font-semibold text-gray-900 mb-4">Nossa Localização</h4>
-              <div className="bg-gray-200 rounded-lg h-48 flex items-center justify-center">
-                <div className="text-center text-gray-500">
+            <div className="bg-background rounded-xl p-6 shadow-md">
+              <h4 className="font-semibold text-foreground mb-4">Nossa Localização</h4>
+              <div className="bg-muted rounded-lg h-48 flex items-center justify-center">
+                <div className="text-center text-muted-foreground">
                   <MapPin className="h-12 w-12 mx-auto mb-2" />
                   <p>Mapa da localização</p>
                   <p className="text-sm">Clique no endereço acima para ver no Google Maps</p>
